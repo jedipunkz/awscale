@@ -1,0 +1,6 @@
+site :opscode
+
+# this berkshelf has a bug.
+cookbook 'vhost'
+cookbook 'apache2'
+cookbook 'wordpress'

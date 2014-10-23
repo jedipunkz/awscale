@@ -1,0 +1,37 @@
+{
+    "id": "cpi",
+    "vhosts": {
+        "test01": {
+            "apache2": {
+                "name": "test01.cpi.ad.jp",
+                "aliases": [ "test01.jam.cpi.ad.jp" ],
+                "domain": "cpi.ad.jp",
+                "environment": "production"
+            },
+            "db": {
+                "dbname": "wp-test01",
+                "dbuser": "test01",
+                "dbpass": "test01"
+            },
+            "wordpress": {
+                "wp_trig": true
+            }
+        },
+        "test02": {
+            "apache2": {
+                "name": "test02.cpi.ad.jp",
+                "aliases": [ "test02.jam.cpi.ad.jp" ],
+                "domain": "cpi.ad.jp",
+                "environment": "production"
+            },
+            "db": {
+                "dbname": "wp-test02",
+                "dbuser": "test02",
+                "dbpass": "test02"
+            },
+            "wordpress": {
+                "wp_trig": true
+            }
+        }
+    }
+}

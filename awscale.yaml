@@ -1,0 +1,23 @@
+aws_access_key_id:
+aws_secret_access_key:
+region: ap-northeast-1
+az: ["ap-northeast-1a", "ap-northeast-1c"]
+aws_ssh_secret_key: /Users/thirai/aws/test02.pem
+aws_ssh_secret_key_name: test02
+aws_security_group: ssh
+aws_ami: ami-bddaa2bc
+aws_instance_type: t1.micro
+chef_user: thirai
+#chef_secret_key: ./.chef/thirai.pem
+chef_secret_key: /Users/thirai/aws/.chef/thirai.pem
+#chef_validation_key: ./.chef/chef-validator.pem
+chef_validation_key: /Users/thirai/aws/.chef/chef-validator.pem
+chef_server_url: https://ec2-54-178-201-251.ap-northeast-1.compute.amazonaws.com
+#chef_bootstrap_file: ./.chef/bootstrap/chef-full.erb
+chef_bootstrap_file: /Users/thirai/aws/.chef/bootstrap/chef-full.erb
+mysql_host: 10.200.9.127
+mysql_user: awscaleuser
+mysql_pass: awscalepass
+mysql_database: awscale
+awscale_instance_basic_count: 1
+awscale_instance_max_count: 2

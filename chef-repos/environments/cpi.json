@@ -1,0 +1,21 @@
+{
+  "name": "cpi",
+  "description": "",
+  "cookbook_versions": {
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "apache2": {
+      "vhosts": {
+        "name": "rails.company.com",
+        "aliases": [ "content-test.optimispt.com" ],
+        "domain": "company",
+        "environment": "production"
+      },
+      "listen_ports": "80"
+    }
+  }
+}
